@@ -1,0 +1,43 @@
+/* This part imports Tailwind's base, component, and utility classes */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Additional custom CSS if needed */
+
+/* Custom hover styles for links and buttons */
+button:hover {
+  transition: color 0.2s ease-in-out;
+}
+
+/* Specific adjustments for the Navbar elements */
+nav {
+  font-family: 'Inter', sans-serif; /* You can change the font as per your need */
+}
+
+/* Border at the bottom of the logo and utility section */
+.container {
+  border-bottom: 1px solid #e5e7eb; /* Light gray border */
+}
+
+/* Additional styles for responsiveness and alignment */
+.container .flex {
+  flex-wrap: wrap; /* Ensure flex items wrap on smaller screens */
+}
+
+/* Button hover color changes */
+button {
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+button:hover {
+  color: #1a1a1a; /* Darker color for button hover state */
+}
+
+/* Media query for responsive design on larger screens */
+@media (min-width: 768px) {
+  .container .flex {
+    flex-direction: row; /* Row layout for wider screens */
+    justify-content: space-between;
+  }
+}
