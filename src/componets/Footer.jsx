@@ -23,26 +23,19 @@ const Footer = () => {
             <button className="mt-2 px-4 py-1 bg-white text-black rounded-md text-xs">
               Get started
             </button>
-
-            <div className="mt-4 flex justify-start space-x-2">
-              
-              <img
-                src="https://a.storyblok.com/f/165154/x/de4bf52166/badge-1.svg"
-                alt="Google Play"
-                className="h-10"
-                
-
-              />
-              <img
-                src="https://a.storyblok.com/f/165154/x/61c51d3d38/badge.svg"
-                alt="App Store"
-                className="h-10"
-              />
+            <div className="flex justify-start space-x-4 mb-4">
+              <h2 className="text-xl">Find Gelato on:</h2>
+              <div className="flex space-x-9 text-gray-400 text-xl">
+                <i className="fab fa-instagram"></i>
+                <i className="fab fa-facebook-f"></i>
+                <i className="fab fa-tiktok"></i>
+                <i className="fab fa-linkedin-in"></i>
+              </div>
             </div>
           </div>
 
           {/* Columns Section */}
-          <div className="md:w-3/4 grid grid-cols-2 md:grid-cols-4 gap-8">
+          <div className="md:w-3/4 grid grid-cols-2 md:grid-cols-4 gap-8 hidden md:grid"> {/* Hidden on mobile initially */}
             <div>
               <h2 className="font-semibold text-white mb-2">Print on demand</h2>
               <ul className="space-y-1 text-gray-400">
@@ -51,15 +44,12 @@ const Footer = () => {
                 <li>Shipping and delivery</li>
                 <li>Dropshipping products</li>
                 <li>Pro sellers</li>
-                <li>White label products</li>
-                <li>Returns policy</li>
-                <li>Global, yet local</li>
+
                 <li>Sustainability</li>
                 <li>Support</li>
               </ul>
             </div>
 
-            {/* Integrations */}
             <div>
               <h2 className="font-semibold text-white mb-2">Integrations</h2>
               <ul className="space-y-1 text-gray-400">
@@ -73,16 +63,7 @@ const Footer = () => {
               </ul>
             </div>
 
-            <div className="space-y-2">
-              <div className="flex justify-start space-x-4 mb-4">
-                <h2 className="text-sm">Find Gelato on:</h2>
-                <div className="flex space-x-4 text-gray-400 text-sm">
-                  <i className="fab fa-instagram"></i>
-                  <i className="fab fa-facebook-f"></i>
-                  <i className="fab fa-tiktok"></i>
-                  <i className="fab fa-linkedin-in"></i>
-                </div>
-              </div>
+            <div>
               <h2 className="font-semibold text-white mb-2">Start selling</h2>
               <ul className="space-y-1 text-gray-400">
                 <li>Shopify</li>
@@ -95,21 +76,20 @@ const Footer = () => {
               </ul>
             </div>
 
-            {/* Company */}
             <div>
               <h2 className="font-semibold text-white mb-2">Company</h2>
               <ul className="space-y-1 text-gray-400">
                 <li>Shipping and delivery</li>
                 <li>Dropshipping products</li>
                 <li>Pro sellers</li>
-                <li>White label products</li>
-                <li>Returns policy</li>
+
                 <li>Global, yet local</li>
                 <li>Sustainability</li>
                 <li>Support</li>
               </ul>
             </div>
           </div>
+
         </div>
 
         {/* Mobile Dropdown Toggle */}
@@ -121,7 +101,7 @@ const Footer = () => {
 
         {/* Bottom Section */}
         <div className="mt-10">
-          <div className={`md:hidden ${isOpen ? 'block' : 'hidden'}`}>
+          <div className={`md:hidden ${isOpen ? 'block' : 'hidden'}`}> {/* Conditionally render on mobile */}
             <div className="flex flex-col space-y-4 text-center">
               {/* Mobile Dropdown Content */}
               <div className="space-y-2">
@@ -194,7 +174,3 @@ const Footer = () => {
 };
 
 export default Footer;
-
-
-
-

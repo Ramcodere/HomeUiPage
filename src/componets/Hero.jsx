@@ -12,7 +12,7 @@ const Hero = () => {
           <h1 className="text-3xl md:text-4xl font-bold text-gray-800">
             Print on demand for your ecommerce business
           </h1>
-          <p className="text-lg md:text-xl text-gray-600 mt-4 font-semibold">
+          <p className="text-lg md:text-x text-gray-600 mt-4 font-bold">
             Sign up for free and only pay for what you sell
           </p>
           <p className="text-base md:text-lg text-gray-600 mt-1">
@@ -23,23 +23,21 @@ const Hero = () => {
             {/* <button className="bg-black text-white font-bold py-2 px-6 rounded"> */}
             <button className="text-white bg-black text-xs border border-black px-4 py-2 rounded-md  mt-4">
 
-            {/* bg-transparent */}
+              {/* bg-transparent */}
               Get started for free
             </button>
-            <button className="text-white bg-black text-xs border border-black px-4 py-2 rounded-md  mt-4 ">
-            See our products
-            </button>
+
           </div>
 
 
 
-<div className="flex items-center mt-8">
+          <div className="flex items-center mt-8">
             <div className="text-right">
-            <img
-              src="https://a.storyblok.com/f/165154/300x86/7d28c66657/shopify_monotone_black.svg"
-              alt="Shopify Logo"
-              className="w-20 mr-2"
-            />
+              <img
+                src="https://a.storyblok.com/f/165154/300x86/7d28c66657/shopify_monotone_black.svg"
+                alt="Shopify Logo"
+                className="w-20 mr-2"
+              />
 
               <div className="flex items-center space-x-1">
                 <span className="text-green-500 text-lg font-bold">4.8/ 5</span>
@@ -83,11 +81,10 @@ const Hero = () => {
       </div>
 
       {/* New Section - Image and Details */}
+
       <div className="mt-16 custom0">
         <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-4">Why choose Gelato</h2>
-        {/* Grid Layout for Image and Details */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-4">
-          {/* Image Section */}
           <div>
             <img
               src="https://a.storyblok.com/f/165154/1450x1450/97cf3c3c7e/0341_2024-brand-vi-rollout-dedicated-hero-1450x1450-1.png/m/1000x0/"
@@ -95,53 +92,39 @@ const Hero = () => {
               className="w-full max-w-xs md:max-w-md"
             />
           </div>
-          {/* Details Section */}
+
+
+
           <div className="px-4 md:px-0">
-            <ul className="list-disc list-inside text-gray-600 space-y-2">
+            <ul className="list-disc list-inside text-gray-600 space-y-4">
               <li>
-                <strong className="text-gray-800">World's largest print-on-demand network</strong>
-                <ul className="list-disc list-inside ml-4">
-                  <li>140+ print partners in 32 countries. Gelato is a truly global service.</li>
-                </ul>
+                <strong className="text-gray-800">World's Largest Network</strong>
+                <p className="ml-6 text-gray-700">With over <span className="font-semibold">140+ print partners</span> across 32 countries, Gelato ensures your business is connected globally.</p>
               </li>
               <li>
-                <strong className="text-gray-800">Sell globally, produce locally</strong>
-                <ul className="list-disc list-inside ml-4">
-                  <li>Your products are produced close to your customers, wherever they are.</li>
-                </ul>
+                <strong className="text-gray-800">Sell Globally, Produce Locally</strong>
+                <p className="ml-6 text-gray-700">Our local production model means your products are made closer to your customers, no matter where they are, reducing shipping times and costs.</p>
               </li>
               <li>
-                <strong className="text-gray-800">100% free editing tools</strong>
-                <ul className="list-disc list-inside ml-4">
-                  <li>Create your custom products using our suite of free tools.</li>
-                </ul>
+                <strong className="text-gray-800">100% Free Editing Tools</strong>
+                <p className="ml-6 text-gray-700">Customize your products effortlessly with our suite of free editing tools designed for creativity and simplicity.</p>
+              </li>
+
+              <li>
+                <strong className="text-gray-800">High-Quality Products</strong>
+                <p className="ml-6 text-gray-700">We collaborate with industry-leading brands to provide top-tier products your customers will love.</p>
               </li>
               <li>
-                <strong className="text-gray-800">60+ logistics partners</strong>
-                <ul className="list-disc list-inside ml-4">
-                  <li>Our global network of logistics partners ensures your products are delivered fast.</li>
-                </ul>
+                <strong className="text-gray-800">Creativity with Shutterstock</strong>
+                <p className="ml-6 text-gray-700">Explore millions of images and graphics from Shutterstock to create unique, sellable products.</p>
               </li>
               <li>
-                <strong className="text-gray-800">High-quality products</strong>
-                <ul className="list-disc list-inside ml-4">
-                  <li>We partner with the world's leading brands to ensure the best quality products.</li>
-                </ul>
-              </li>
-              <li>
-                <strong className="text-gray-800">Endless creativity with Shutterstock Images</strong>
-                <ul className="list-disc list-inside ml-4">
-                  <li>Access millions of images and graphics to create unique products you can sell in your store.</li>
-                </ul>
-              </li>
-              <li>
-                <strong className="text-gray-800">1-click integration to the leading e-commerce platforms</strong>
-                <ul className="list-disc list-inside ml-4">
-                  <li>Connect your store to Gelato using our integrations with Shopify, Etsy, and more.</li>
-                </ul>
+                <strong className="text-gray-800">Seamless 1-Click Integration</strong>
+                <p className="ml-6 text-gray-700">Easily connect to platforms like Shopify and Etsy, and start selling with our 1-click integration.</p>
               </li>
             </ul>
           </div>
+
 
 
 
@@ -175,7 +158,7 @@ const Hero = () => {
       <div className="mt-16">
         <div className="flex flex-col md:flex-row items-center justify-between">
 
-        <div className="md:w-1/2 flex justify-center">
+          <div className="md:w-1/2 flex justify-center">
             <img
               src="https://a.storyblok.com/f/165154/1080x1080/6120ad9f16/helatoconnect-lp-hero-gif-updated_2-compressed.gif/m/"
               alt="GelatoConnect Image"
@@ -195,7 +178,7 @@ const Hero = () => {
             </button>
           </div>
 
-          
+
 
 
 
